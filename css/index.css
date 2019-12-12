@@ -1,3 +1,51 @@
+.sun {
+  background-color: #00FF00;
+  cursor: pointer;
+  border: none;
+  padding: 6% 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.9rem;
+  color: white;
+  border-radius: 30%;
+}
+.sun:hover {
+  background-color: #008080;
+}
+.mountain {
+  background-color: #228B22;
+  cursor: pointer;
+  border: none;
+  padding: 6% 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.9rem;
+  color: white;
+  border-radius: 30%;
+}
+.mountain:hover {
+  background-color: #008080;
+}
+.island {
+  background-color: #20B2AA;
+  cursor: pointer;
+  border: none;
+  padding: 6% 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.9rem;
+  color: white;
+  border-radius: 30%;
+}
+.island:hover {
+  background-color: #008080;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,12 +219,11 @@ img {
   margin: 0 auto;
 }
 .nav-menu {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   border-bottom: 3px dashed lightgrey;
+}
+.nav-menu .title {
+  padding-right: 15%;
 }
 nav {
   display: flex;
@@ -188,6 +235,29 @@ nav a {
   padding: 2rem 2rem;
   font-size: 1.8rem;
   color: black;
+}
+.nav-menu h1 {
+  padding-top: 20px;
+  float: left;
+}
+@media (max-width: 500px) {
+  .nav-menu h1 {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+}
+.nav-menu h1 {
+  padding-top: 15px;
+  padding-left: 10px;
+  float: left;
+}
+@media (max-width: 800px) {
+  .nav-menu h1 {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
 }
 .footer {
   width: 100%;
@@ -217,43 +287,43 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+.text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.destination {
   width: 30%;
   margin-bottom: 30px;
 }

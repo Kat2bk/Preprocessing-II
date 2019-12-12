@@ -1,16 +1,19 @@
 // Navigation Styles here
 
+@phone: ~'(max-width: 500px)';
+@tablet: ~'(max-width: 800px)';
+
 .displayFlex(@align, @justify) {
     align-items: @align;
     justify-content: @justify;
 }
 
 .nav-menu {
-    margin: 0 auto;
-    display: flex;
-    .displayFlex(center, space-evenly);
     width: 100%;
     border-bottom: 3px dashed lightgrey;
+    .title {
+        padding-right: 15%;
+    }
 }
 
 nav {
@@ -22,4 +25,25 @@ nav {
         font-size: 1.8rem;
         color: black;
     }
+}
+
+.nav-menu h1 {
+    padding-top: 20px;
+    @media @phone {
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+      }
+    float: left;
+}
+
+.nav-menu h1 {
+    padding-top: 15px;
+    padding-left: 10px;
+    @media @tablet {
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+    }
+    float: left;
 }

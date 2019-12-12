@@ -1,7 +1,31 @@
 // Mixins in here
 
-.btn() {
-    display: block;
-    background-color: #008080;
+
+.button(@color) {
+    background-color: @color;
     cursor: pointer;
+    border: none;
+    padding: 6% 20%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 1.9rem;
+    color: white;
+    border-radius: 30%;
+    &:hover {
+        background-color: #008080;
+    }
+}
+
+.sun {
+    .button(#00FF00);
+}
+
+.mountain {
+    .button(#228B22);
+}
+
+.island {
+    .button(#20B2AA);
 }
