@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+.displayFlex(@align, @justify) {
+    align-items: @align;
+    justify-content: @justify;
+}
+
+.nav-menu {
+    margin: 0 auto;
+    display: flex;
+    .displayFlex(center, space-evenly);
+    width: 100%;
+    border-bottom: 3px dashed lightgrey;
+}
+
+nav {
+    display: flex;
+    .displayFlex(center, center);
+    padding-bottom: 1%;
+    a {
+        padding: 2rem 2rem;
+        font-size: 1.8rem;
+        color: black;
+    }
+}
