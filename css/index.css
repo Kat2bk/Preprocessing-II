@@ -219,12 +219,11 @@ img {
   margin: 0 auto;
 }
 .nav-menu {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   border-bottom: 3px dashed lightgrey;
+}
+.nav-menu .title {
+  padding-right: 15%;
 }
 nav {
   display: flex;
@@ -236,6 +235,29 @@ nav a {
   padding: 2rem 2rem;
   font-size: 1.8rem;
   color: black;
+}
+.nav-menu h1 {
+  padding-top: 20px;
+  float: left;
+}
+@media (max-width: 500px) {
+  .nav-menu h1 {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+}
+.nav-menu h1 {
+  padding-top: 15px;
+  padding-left: 10px;
+  float: left;
+}
+@media (max-width: 800px) {
+  .nav-menu h1 {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
 }
 .footer {
   width: 100%;
@@ -265,8 +287,6 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 1000px) {
-}
 .text-content {
   width: 48%;
   padding-right: 1%;
@@ -294,10 +314,6 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-@media screen and (max-width: 1000px) {
-  align-items: center;
-  justify-content: center;
-}
 img {
   border-radius: 10px;
 }
@@ -307,7 +323,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.content-pick .destination {
+.destination {
   width: 30%;
   margin-bottom: 30px;
 }
