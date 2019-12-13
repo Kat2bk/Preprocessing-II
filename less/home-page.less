@@ -1,3 +1,6 @@
+@phone: ~'(max-width: 500px)';
+@tablet: ~'(max-width: 800px)';
+
 .home {
 
   .banner-content {
@@ -66,3 +69,39 @@
     width: 30%;
     margin-bottom: 30px;
 } // home
+
+@media @tablet {
+  .content-section, .inverse-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-fluid {
+    display: none;
+  }
+  .text-content {
+    width: 90%;
+  }
+  .img-content {
+    margin: 0 auto;
+    padding-right: 10%;
+    width: auto;
+  }
+}
+
+@media @phone {
+  .content-section, .inverse-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-fluid {
+    display: none;
+  }
+  .text-content {
+    width: 90%;
+  }
+  .img-content {
+    margin: 0 auto;
+    padding-right: 10%;
+    width: auto;
+}
+}
